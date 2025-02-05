@@ -67,23 +67,37 @@ procedure TForm1.Button1Click(Sender: TObject);
 var
   num1, num2, output: Double;
 begin
-  num1 := StrToFloat(Edit2.Text);
-  num2 := StrToFloat(Edit3.Text);
+  // Überprüfung der Eingaben: Beide Felder müssen gültige Zahlen sein
+  if (not TryStrToFloat(Edit2.Text, num1)) or (not TryStrToFloat(Edit3.Text, num2)) then
+  begin
+    ShowMessage('Fehler: Bitte geben Sie gültige Zahlen ein!');
+    Exit;
+  end;
+
+  // Überprüfung des Operators
+  case ComboBox1.Text of
+    '+', '-', '*', '/': ; // Gültig, nichts tun
+  else
+    ShowMessage('Fehler: Ungültiger Operator!');
+    Exit;
+  end;
+
+  // Überprüfung auf Division durch 0
   if (ComboBox1.Text = '/') and (num2 = 0) then
   begin
     ShowMessage('Fehler: Division durch 0 ist nicht erlaubt!');
-    Exit;  // Verhindert Berechnung bei Divi durch 0
+    Exit;
   end;
+
+  // Berechnung durchführen
   case ComboBox1.Text of
     '+': output := num1 + num2;
     '-': output := num1 - num2;
     '*': output := num1 * num2;
     '/': output := num1 / num2;
-  else
-    ShowMessage('Unbekannter Operator!');
-    Exit;
   end;
+
+  // Ergebnis ausgeben
   Edit1.Text := FloatToStr(output);
 end;
-var num1,num2,output:Double;
 end.
