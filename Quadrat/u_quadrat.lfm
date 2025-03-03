@@ -1,0 +1,64 @@
+object Form1: TForm1
+  Cursor = crHelp
+  Left = 1307
+  Height = 240
+  Top = 333
+  Width = 320
+  HorzScrollBar.Smooth = True
+  HorzScrollBar.Tracking = True
+  VertScrollBar.Smooth = True
+  VertScrollBar.Tracking = True
+  Caption = 'Form1'
+  ClientHeight = 240
+  ClientWidth = 320
+  Color = clMoneyGreen
+  LCLVersion = '2.2.4.0'
+  Visible = True
+  object Button1: TButton
+    Left = 128
+    Height = 25
+    Top = 80
+    Width = 75
+    Caption = 'Button1'
+    Color = clSkyBlue
+    Font.Color = clRed
+    OnClick = Button1Click
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Zahl_1: TEdit
+    Left = 24
+    Height = 23
+    Top = 64
+    Width = 80
+    Color = clSilver
+    Font.Color = clWhite
+    ParentFont = False
+    TabOrder = 1
+    Text = 'Zahl_1'
+  end
+  object Zahl_2: TEdit
+    Left = 24
+    Height = 23
+    Top = 112
+    Width = 80
+    Color = clSilver
+    Font.Color = clWhite
+    ParentFont = False
+    TabOrder = 2
+    Text = 'Zahl_2'
+  end
+  object Label1: TLabel
+    Left = 72
+    Height = 15
+    Top = 24
+    Width = 163
+    Caption = 'Zahl zum Quadrieren eingeben'
+    Color = clForm
+    Font.Color = clRed
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+    OnClick = Label1Click
+  end
+end
