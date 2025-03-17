@@ -17,6 +17,7 @@ type
     bt_sub: TButton;
     bt_multi: TButton;
     bt_div: TButton;
+    Button1: TButton;
     ed_num_1: TEdit;
     ed_num_2: TEdit;
     final: TEdit;
@@ -27,6 +28,7 @@ type
     procedure bt_multiClick(Sender: TObject);
     procedure bt_subClick(Sender: TObject);
     procedure bt_sumClick(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure TaschenrechnerClick(Sender: TObject);
   private
@@ -48,6 +50,11 @@ procedure TForm1.bt_sumClick(Sender: TObject);
 begin
   final.Caption:= FloatToStr(StrToFloat(ed_num_1.Caption) + StrToFloat(ed_num_2.Caption));
   Label1.Caption:='+';
+end;
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+  Application.Terminate;
 end;
 
 procedure TForm1.FormCreate(Sender: TObject);
