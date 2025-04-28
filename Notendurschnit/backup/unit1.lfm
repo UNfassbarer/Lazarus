@@ -1,0 +1,128 @@
+object Form1: TForm1
+  Left = 553
+  Height = 518
+  Top = 241
+  Width = 712
+  Caption = 'Form1'
+  ClientHeight = 518
+  ClientWidth = 712
+  Color = clMenuHighlight
+  OnCreate = FormCreate
+  LCLVersion = '2.2.4.0'
+  object E_Eingabe: TEdit
+    Left = 296
+    Height = 23
+    Top = 224
+    Width = 104
+    OnKeyPress = E_EingabeKeyPress
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 152
+    Height = 17
+    Top = 224
+    Width = 83
+    Caption = 'Noteneingabe'
+    Color = clTeal
+    Font.Height = -13
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+  object B_Berechnen: TButton
+    Left = 456
+    Height = 25
+    Top = 224
+    Width = 75
+    Caption = 'Berechnen'
+    Color = clRed
+    Font.Height = -13
+    ParentFont = False
+    TabOrder = 1
+  end
+  object E_Ausgabe: TEdit
+    Left = 296
+    Height = 23
+    Top = 280
+    Width = 105
+    TabOrder = 2
+  end
+  object Label2: TLabel
+    Left = 152
+    Height = 17
+    Top = 280
+    Width = 93
+    Caption = 'Notendurschnitt'
+    Color = clTeal
+    Font.Height = -13
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+  object ScrollBar1: TScrollBar
+    Left = 288
+    Height = 17
+    Top = 336
+    Width = 121
+    Max = 3
+    PageSize = 0
+    TabOrder = 3
+    OnChange = ScrollBar1Change
+  end
+  object Label3: TLabel
+    Left = 152
+    Height = 17
+    Top = 339
+    Width = 83
+    Caption = 'Dezimalstellen'
+    Color = clTeal
+    Font.Height = -13
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+  object L_Scroll: TLabel
+    Left = 240
+    Height = 1
+    Top = 339
+    Width = 1
+    ParentColor = False
+  end
+  object Button1: TButton
+    Left = 448
+    Height = 25
+    Top = 278
+    Width = 88
+    Caption = 'Neu Rechnen'
+    Color = clRed
+    Font.Height = -13
+    OnClick = Button1Click
+    ParentFont = False
+    TabOrder = 4
+  end
+  object B_Exit: TButton
+    Left = 456
+    Height = 25
+    Top = 329
+    Width = 75
+    Caption = 'Ende'
+    Color = clRed
+    Font.Height = -13
+    OnClick = B_ExitClick
+    ParentFont = False
+    TabOrder = 5
+  end
+  object Label4: TLabel
+    Left = 256
+    Height = 28
+    Top = 152
+    Width = 209
+    Caption = 'Notendurschnitsrechner'
+    Color = clMoneyGreen
+    Font.Color = clMaroon
+    Font.Height = -20
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+end
