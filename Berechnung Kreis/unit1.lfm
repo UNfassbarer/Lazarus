@@ -1,32 +1,33 @@
 object Form1: TForm1
   Left = 358
-  Height = 262
+  Height = 328
   Top = 288
-  Width = 320
+  Width = 400
   Caption = 'Form1'
-  ClientHeight = 262
-  ClientWidth = 320
+  ClientHeight = 328
+  ClientWidth = 400
   Color = clActiveCaption
-  LCLVersion = '2.2.4.0'
+  DesignTimePPI = 120
+  LCLVersion = '3.8.0.0'
   object E_diameter: TEdit
-    Left = 168
-    Height = 15
-    Top = 64
-    Width = 88
+    Left = 210
+    Height = 20
+    Top = 80
+    Width = 110
     BorderSpacing.CellAlignHorizontal = ccaCenter
     BorderSpacing.CellAlignVertical = ccaCenter
     BorderStyle = bsNone
     Color = clTeal
     Font.Color = clWhite
-    OnExit = E_diameterExit
     ParentFont = False
     TabOrder = 0
+    OnExit = E_diameterExit
   end
   object L_diameter: TLabel
-    Left = 34
-    Height = 15
-    Top = 67
-    Width = 117
+    Left = 42
+    Height = 20
+    Top = 84
+    Width = 146
     Caption = 'Eingabe Durchmesser:'
     Color = clTeal
     Font.Color = clWhite
@@ -35,31 +36,31 @@ object Form1: TForm1
     Transparent = False
   end
   object B_area: TButton
-    Left = 64
-    Height = 25
-    Top = 96
-    Width = 75
+    Left = 80
+    Height = 31
+    Top = 120
+    Width = 94
     Caption = 'Fläche'
     Color = clTeal
-    OnClick = B_areaClick
     ParentFont = False
     TabOrder = 1
+    OnClick = B_areaClick
   end
   object B_radius: TButton
-    Left = 176
-    Height = 25
-    Top = 96
-    Width = 75
+    Left = 220
+    Height = 31
+    Top = 120
+    Width = 94
     Caption = 'Radius'
     Color = clMoneyGreen
-    OnClick = B_radiusClick
     TabOrder = 2
+    OnClick = B_radiusClick
   end
   object L_ausgabe: TLabel
-    Left = 32
-    Height = 15
-    Top = 136
-    Width = 102
+    Left = 40
+    Height = 20
+    Top = 170
+    Width = 128
     Caption = 'Ausgebe Ergebniss:'
     Color = clTeal
     Font.Color = clWhite
@@ -68,10 +69,10 @@ object Form1: TForm1
     Transparent = False
   end
   object E_ausgabe: TEdit
-    Left = 168
-    Height = 15
-    Top = 128
-    Width = 85
+    Left = 210
+    Height = 20
+    Top = 160
+    Width = 106
     BorderStyle = bsNone
     Color = clTeal
     Font.Color = clWhite
@@ -79,31 +80,31 @@ object Form1: TForm1
     TabOrder = 3
   end
   object B_exit: TButton
-    Left = 56
-    Height = 25
-    Top = 168
-    Width = 75
+    Left = 70
+    Height = 31
+    Top = 210
+    Width = 94
     Caption = 'Exit'
     Color = clTeal
-    OnClick = B_exitClick
     TabOrder = 4
+    OnClick = B_exitClick
   end
   object B_clear: TButton
-    Left = 176
-    Height = 25
-    Top = 168
-    Width = 75
+    Left = 220
+    Height = 31
+    Top = 210
+    Width = 94
     Caption = 'Clear'
     ModalResult = 1
-    OnClick = B_clearClick
     TabOrder = 5
+    OnClick = B_clearClick
   end
   object Label1: TLabel
-    Left = 96
-    Height = 15
-    Top = 31
-    Width = 92
-    BorderSpacing.Around = 100
+    Left = 120
+    Height = 20
+    Top = 39
+    Width = 114
+    BorderSpacing.Around = 125
     Caption = 'Berechnung Kreis'
     Color = clTeal
     ParentColor = False

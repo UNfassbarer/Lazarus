@@ -5,7 +5,7 @@ unit Unit1;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls,Math;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls;
 
 type
 
@@ -44,6 +44,10 @@ begin
  E_ausgabe.Caption := FloatToStrF(num, ffFixed, 8, 3);
 end;
 
+procedure TForm1.E_diameterExit(Sender: TObject);
+begin
+  d := StrToFloat(E_diameter.Caption);
+end;
 
 procedure TForm1.B_areaClick(Sender: TObject);
 begin
@@ -65,11 +69,4 @@ procedure TForm1.B_radiusClick(Sender: TObject);
 begin
   Round_to_Float(2*PI*(d/2));
 end;
-
-procedure TForm1.E_diameterExit(Sender: TObject);
-begin
-  d := StrToFloat(E_diameter.Caption);
-end;
-
 end.
-

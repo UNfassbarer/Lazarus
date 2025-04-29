@@ -1,0 +1,36 @@
+object Form1: TForm1
+  Left = 423
+  Height = 240
+  Top = 361
+  Width = 320
+  Caption = 'Form1'
+  ClientHeight = 240
+  ClientWidth = 320
+  DesignTimePPI = 120
+  LCLVersion = '3.8.0.0'
+  object E_in_out: TEdit
+    Left = 10
+    Height = 28
+    Top = 10
+    Width = 100
+    TabOrder = 0
+  end
+  object B_date: TButton
+    Left = 176
+    Height = 31
+    Top = 24
+    Width = 94
+    Caption = 'Date'
+    TabOrder = 1
+    OnClick = B_dateClick
+  end
+  object B_time: TButton
+    Left = 168
+    Height = 31
+    Top = 58
+    Width = 94
+    Caption = 'Time'
+    TabOrder = 2
+    OnClick = B_timeClick
+  end
+end
