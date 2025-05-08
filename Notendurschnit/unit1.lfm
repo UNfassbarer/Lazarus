@@ -1,117 +1,112 @@
 object Form1: TForm1
   Left = 553
-  Height = 518
+  Height = 623
   Top = 241
-  Width = 712
+  Width = 890
   Caption = 'Form1'
-  ClientHeight = 518
-  ClientWidth = 712
+  ClientHeight = 623
+  ClientWidth = 890
   Color = clMenuHighlight
-  OnCreate = FormCreate
-  LCLVersion = '2.2.4.0'
+  DesignTimePPI = 120
+  Menu = MainMenu1
+  LCLVersion = '3.8.0.0'
   object E_Eingabe: TEdit
-    Left = 296
-    Height = 23
-    Top = 224
-    Width = 104
-    OnKeyPress = E_EingabeKeyPress
+    Left = 476
+    Height = 28
+    Top = 272
+    Width = 130
     TabOrder = 0
+    OnKeyPress = E_EingabeKeyPress
   end
   object Label1: TLabel
-    Left = 152
-    Height = 17
-    Top = 224
-    Width = 83
+    Left = 296
+    Height = 21
+    Top = 272
+    Width = 98
     Caption = 'Noteneingabe'
     Color = clTeal
-    Font.Height = -13
+    Font.Height = -16
     ParentColor = False
     ParentFont = False
     Transparent = False
   end
   object E_Ausgabe: TEdit
-    Left = 296
-    Height = 23
-    Top = 280
-    Width = 105
+    Left = 476
+    Height = 28
+    Top = 342
+    Width = 131
     TabOrder = 1
   end
   object Label2: TLabel
-    Left = 152
-    Height = 17
-    Top = 280
-    Width = 93
+    Left = 296
+    Height = 21
+    Top = 342
+    Width = 113
     Caption = 'Notendurschnitt'
     Color = clTeal
-    Font.Height = -13
+    Font.Height = -16
     ParentColor = False
     ParentFont = False
     Transparent = False
   end
   object ScrollBar1: TScrollBar
-    Left = 288
-    Height = 17
-    Top = 336
-    Width = 121
+    Left = 466
+    Height = 21
+    Top = 412
+    Width = 151
     Max = 3
     PageSize = 0
     TabOrder = 2
     OnChange = ScrollBar1Change
   end
   object Label3: TLabel
-    Left = 152
-    Height = 17
-    Top = 339
-    Width = 83
+    Left = 296
+    Height = 21
+    Top = 416
+    Width = 101
     Caption = 'Dezimalstellen'
     Color = clTeal
-    Font.Height = -13
+    Font.Height = -16
     ParentColor = False
     ParentFont = False
     Transparent = False
   end
   object L_Scroll: TLabel
-    Left = 240
+    Left = 406
     Height = 1
-    Top = 339
+    Top = 416
     Width = 1
     ParentColor = False
   end
-  object Button1: TButton
-    Left = 443
-    Height = 25
-    Top = 240
-    Width = 88
-    Caption = 'Neu Rechnen'
-    Color = clRed
-    Font.Height = -13
-    OnClick = Button1Click
-    ParentFont = False
-    TabOrder = 3
-  end
-  object B_Exit: TButton
-    Left = 456
-    Height = 25
-    Top = 304
-    Width = 75
-    Caption = 'Ende'
-    Color = clRed
-    Font.Height = -13
-    OnClick = B_ExitClick
-    ParentFont = False
-    TabOrder = 4
-  end
   object Label4: TLabel
-    Left = 256
-    Height = 28
-    Top = 152
-    Width = 209
+    Left = 320
+    Height = 35
+    Top = 190
+    Width = 267
     Caption = 'Notendurschnitsrechner'
     Color = clMoneyGreen
     Font.Color = clMaroon
-    Font.Height = -20
+    Font.Height = -25
     ParentColor = False
     ParentFont = False
     Transparent = False
+  end
+  object MainMenu1: TMainMenu
+    Left = 112
+    Top = 72
+    object MenuItem1: TMenuItem
+      Caption = 'Neu Rechnen'
+      object MenuItem3: TMenuItem
+        Caption = 'Click ME'
+        OnClick = MenuItem3Click
+      end
+    end
+    object MenuItem2: TMenuItem
+      Caption = 'Beenden'
+      object MenuItem4: TMenuItem
+        Caption = 'Click ME'
+        OnClick = MenuItem4Click
+      end
+    end
   end
 end

@@ -5,15 +5,13 @@ unit Unit1;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, Menus;
 
 type
 
   { TForm1 }
 
   TForm1 = class(TForm)
-    Button1: TButton;
-    B_Exit: TButton;
     E_Ausgabe: TEdit;
     E_Eingabe: TEdit;
     Label1: TLabel;
@@ -21,11 +19,15 @@ type
     Label3: TLabel;
     Label4: TLabel;
     L_Scroll: TLabel;
+    MainMenu1: TMainMenu;
+    MenuItem1: TMenuItem;
+    MenuItem2: TMenuItem;
+    MenuItem3: TMenuItem;
+    MenuItem4: TMenuItem;
     ScrollBar1: TScrollBar;
-    procedure Button1Click(Sender: TObject);
-    procedure B_ExitClick(Sender: TObject);
     procedure E_EingabeKeyPress(Sender: TObject; var Key: char);
-    procedure FormCreate(Sender: TObject);
+    procedure MenuItem3Click(Sender: TObject);
+    procedure MenuItem4Click(Sender: TObject);
     procedure ScrollBar1Change(Sender: TObject);
   private
 
@@ -45,11 +47,6 @@ implementation
 
 { TForm1 }
 
-procedure TForm1.B_ExitClick(Sender: TObject);
-begin
-  ShowMessage('Das Programm wurde am ' + DateToStr(Date) + ' um ' + TimeToStr(Time) + ' Uhr beendet');
-  Application.Terminate;
-end;
 
 procedure TForm1.E_EingabeKeyPress(Sender: TObject; var Key: char);
 begin
@@ -63,16 +60,18 @@ begin
   end;
 end;
 
-procedure TForm1.FormCreate(Sender: TObject);
-begin
-end;
-
-procedure TForm1.Button1Click(Sender: TObject);
+procedure TForm1.MenuItem3Click(Sender: TObject);
 begin
 E_Eingabe.Clear;
 E_Ausgabe.Clear;
 Counter:=0;
 Notes:=0;
+end;
+
+procedure TForm1.MenuItem4Click(Sender: TObject);
+begin
+ShowMessage('Das Programm wurde am ' + DateToStr(Date) + ' um ' + TimeToStr(Time) + ' Uhr beendet');
+Application.Terminate;
 end;
 
 procedure TForm1.ScrollBar1Change(Sender: TObject);

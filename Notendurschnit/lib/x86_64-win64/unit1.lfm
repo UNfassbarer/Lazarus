@@ -1,0 +1,123 @@
+object Form1: TForm1
+  Left = 553
+  Height = 623
+  Top = 241
+  Width = 890
+  Caption = 'Form1'
+  ClientHeight = 623
+  ClientWidth = 890
+  Color = clMenuHighlight
+  DesignTimePPI = 120
+  Menu = MainMenu1
+  LCLVersion = '3.8.0.0'
+  object E_Eingabe: TEdit
+    Left = 370
+    Height = 28
+    Top = 280
+    Width = 130
+    TabOrder = 0
+    OnKeyPress = E_EingabeKeyPress
+  end
+  object Label1: TLabel
+    Left = 190
+    Height = 21
+    Top = 280
+    Width = 98
+    Caption = 'Noteneingabe'
+    Color = clTeal
+    Font.Height = -16
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+  object E_Ausgabe: TEdit
+    Left = 370
+    Height = 28
+    Top = 350
+    Width = 131
+    TabOrder = 1
+  end
+  object Label2: TLabel
+    Left = 190
+    Height = 21
+    Top = 350
+    Width = 113
+    Caption = 'Notendurschnitt'
+    Color = clTeal
+    Font.Height = -16
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+  object ScrollBar1: TScrollBar
+    Left = 360
+    Height = 21
+    Top = 420
+    Width = 151
+    Max = 3
+    PageSize = 0
+    TabOrder = 2
+    OnChange = ScrollBar1Change
+  end
+  object Label3: TLabel
+    Left = 190
+    Height = 21
+    Top = 424
+    Width = 101
+    Caption = 'Dezimalstellen'
+    Color = clTeal
+    Font.Height = -16
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+  object L_Scroll: TLabel
+    Left = 300
+    Height = 1
+    Top = 424
+    Width = 1
+    ParentColor = False
+  end
+  object B_Exit: TButton
+    Left = 570
+    Height = 31
+    Top = 380
+    Width = 94
+    Caption = 'Ende'
+    Color = clRed
+    Font.Height = -16
+    ParentFont = False
+    TabOrder = 3
+  end
+  object Label4: TLabel
+    Left = 320
+    Height = 35
+    Top = 190
+    Width = 267
+    Caption = 'Notendurschnitsrechner'
+    Color = clMoneyGreen
+    Font.Color = clMaroon
+    Font.Height = -25
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+  object MainMenu1: TMainMenu
+    Left = 112
+    Top = 72
+    object MenuItem1: TMenuItem
+      Caption = 'Neu Rechnen'
+      object MenuItem3: TMenuItem
+        Caption = 'Click ME'
+        OnClick = MenuItem3Click
+      end
+    end
+    object MenuItem2: TMenuItem
+      Caption = 'Beenden'
+      object MenuItem4: TMenuItem
+        Caption = 'Click ME'
+        OnClick = MenuItem4Click
+      end
+    end
+  end
+end
