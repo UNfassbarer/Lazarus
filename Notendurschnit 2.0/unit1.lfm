@@ -1,0 +1,118 @@
+object Form1: TForm1
+  Left = 603
+  Height = 518
+  Top = 281
+  Width = 713
+  Caption = 'Form1'
+  ClientHeight = 498
+  ClientWidth = 713
+  Color = clMenuHighlight
+  Menu = MainMenu1
+  LCLVersion = '2.2.4.0'
+  object E_Eingabe: TEdit
+    Left = 384
+    Height = 23
+    Top = 216
+    Width = 104
+    OnKeyPress = E_EingabeKeyPress
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 240
+    Height = 17
+    Top = 216
+    Width = 83
+    Caption = 'Noteneingabe'
+    Color = clTeal
+    Font.Height = -13
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+  object E_Ausgabe: TEdit
+    Left = 384
+    Height = 23
+    Top = 272
+    Width = 105
+    TabOrder = 1
+  end
+  object Label2: TLabel
+    Left = 240
+    Height = 17
+    Top = 272
+    Width = 93
+    Caption = 'Notendurschnitt'
+    Color = clTeal
+    Font.Height = -13
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+  object ScrollBar1: TScrollBar
+    Left = 376
+    Height = 17
+    Top = 328
+    Width = 121
+    Max = 3
+    PageSize = 0
+    TabOrder = 2
+    OnChange = ScrollBar1Change
+  end
+  object Label3: TLabel
+    Left = 240
+    Height = 17
+    Top = 331
+    Width = 83
+    Caption = 'Dezimalstellen'
+    Color = clTeal
+    Font.Height = -13
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+  object L_Scroll: TLabel
+    Left = 328
+    Height = 1
+    Top = 331
+    Width = 1
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 256
+    Height = 28
+    Top = 152
+    Width = 209
+    Caption = 'Notendurschnitsrechner'
+    Color = clMoneyGreen
+    Font.Color = clMaroon
+    Font.Height = -20
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+  object MainMenu1: TMainMenu
+    Left = 32
+    Top = 24
+    object MenuItem1: TMenuItem
+      Caption = 'File'
+      object MenuItem2: TMenuItem
+        Caption = 'Terminate'
+        OnClick = MenuItem2Click
+      end
+    end
+    object MenuItem3: TMenuItem
+      Caption = 'Edit'
+      object MenuItem5: TMenuItem
+        Caption = 'Refresh'
+        OnClick = MenuItem5Click
+      end
+    end
+    object MenuItem4: TMenuItem
+      Caption = 'Info'
+      object MenuItem6: TMenuItem
+        Caption = 'Version: 2.0'
+        OnClick = MenuItem6Click
+      end
+    end
+  end
+end
